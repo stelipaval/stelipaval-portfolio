@@ -20,11 +20,11 @@ export default function Footer() {
               <span className="text-white font-bold text-lg">AI</span>
             </div>
             <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-cyan-200 bg-clip-text text-transparent">
-              ML Engineer
+              Stelica Paval
             </h3>
           </div>
           <p className="text-blue-200 mb-6 max-w-md leading-relaxed">
-            6+ years of experience building cutting-edge machine learning solutions. 
+            7+ years of experience building cutting-edge machine learning solutions. 
             Specializing in deep learning, computer vision, and scalable AI systems.
           </p>
           <div className="flex gap-4">
@@ -69,18 +69,25 @@ export default function Footer() {
         {/* Contact Info */}
         <div>
           <h4 className="text-lg font-semibold text-white mb-4">Get In Touch</h4>
-          <div className="space-y-3">
+          <div className="space-y-2">
+            <a href="tel:+1234567890" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors duration-300 group">
+              <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-500 transition-colors">
+                <span className="text-sm">📞 </span>
+              </div>
+              <span className="text-sm"> (313) 663-1221</span>
+            </a>
+
             <a href="mailto:your.email@example.com" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors duration-300 group">
               <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-cyan-500 transition-colors">
                 <span className="text-sm">📧</span>
               </div>
-              <span className="text-sm">your.email@example.com</span>
+              <span className="text-sm">paval.stelica@gmail.com</span>
             </a>
             <div className="flex items-center gap-3 text-blue-200">
               <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center">
                 <span className="text-sm">📍</span>
               </div>
-              <span className="text-sm">San Francisco, CA</span>
+              <span className="text-sm">Belleville, MI</span>
             </div>
             <a href="/resume.pdf" className="flex items-center gap-3 text-blue-200 hover:text-white transition-colors duration-300 group">
               <div className="w-8 h-8 bg-white/10 rounded-lg flex items-center justify-center group-hover:bg-blue-500 transition-colors">
@@ -98,13 +105,13 @@ export default function Footer() {
       <div className="flex flex-col md:flex-row justify-between items-center gap-4">
         {/* Copyright */}
         <div className="text-blue-200 text-sm">
-          <p>&copy; {new Date().getFullYear()} ML Engineer. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Stelica Paval. All rights reserved.</p>
         </div>
 
         {/* Social Links */}
         <div className="flex items-center gap-6">
           <a 
-            href="https://linkedin.com/in/yourprofile" 
+            href="https://www.linkedin.com/in/stelica-paval" 
             className="group flex items-center gap-2 text-blue-200 hover:text-white transition-colors duration-300"
           >
             <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-blue-600 group-hover:scale-110 transition-all duration-300">
@@ -116,7 +123,7 @@ export default function Footer() {
           </a>
 
           <a 
-            href="https://github.com/yourprofile" 
+            href="https://github.com/stelipaval" 
             className="group flex items-center gap-2 text-blue-200 hover:text-white transition-colors duration-300"
           >
             <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-purple-600 group-hover:scale-110 transition-all duration-300">
@@ -128,19 +135,7 @@ export default function Footer() {
           </a>
 
           <a 
-            href="https://twitter.com/yourprofile" 
-            className="group flex items-center gap-2 text-blue-200 hover:text-white transition-colors duration-300"
-          >
-            <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-cyan-500 group-hover:scale-110 transition-all duration-300">
-              <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/>
-              </svg>
-            </div>
-            <span className="text-sm hidden sm:block">Twitter</span>
-          </a>
-
-          <a 
-            href="mailto:your.email@example.com" 
+            href="mailto:paval.stelica@gmail.com" 
             className="group flex items-center gap-2 text-blue-200 hover:text-white transition-colors duration-300"
           >
             <div className="w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center group-hover:bg-green-500 group-hover:scale-110 transition-all duration-300">
@@ -152,17 +147,6 @@ export default function Footer() {
           </a>
         </div>
       </div>
-    </div>
-
-    {/* Back to Top */}
-    <div className="text-center py-4 border-t border-white/20">
-      <button 
-        onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-        className="inline-flex items-center gap-2 text-blue-200 hover:text-white transition-colors duration-300 group"
-      >
-        <span>Back to Top</span>
-        <span className="group-hover:-translate-y-1 transition-transform">↑</span>
-      </button>
     </div>
   </div>
 </footer>
