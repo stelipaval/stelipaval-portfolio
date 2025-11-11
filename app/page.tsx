@@ -56,9 +56,9 @@ export default function Home() {
                   <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                     <button className="group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-2xl font-semibold hover:from-cyan-600 hover:to-blue-700 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-cyan-500/25 flex items-center gap-2">
                       <a href="#projects"> View Projects
-                     
+
                         <span className="group-hover:translate-x-1 transition-transform">→</span>
-                        </a>
+                      </a>
                     </button>
 
                     <button className="group border-2 border-white/30 text-white px-8 py-4 rounded-2xl font-semibold hover:bg-white/10 hover:border-white/50 backdrop-blur-sm transition-all duration-300 hover:scale-105 flex items-center gap-2">
@@ -77,7 +77,7 @@ export default function Home() {
                   <div className="absolute -inset-4 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 rounded-full blur-xl opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
 
                   {/* Profile image container */}
-                  <div className="relative w-80 h-80 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm shadow-2xl group hover:scale-105 transition-transform duration-500">
+                  <div className="relative w-92 h-92 rounded-full overflow-hidden border-4 border-white/20 backdrop-blur-sm shadow-2xl group hover:scale-105 transition-transform duration-500">
                     <Image
                       src="/images/profile-picture.png"
                       alt="Stelica Paval - Senior Software Engineer"
@@ -640,170 +640,284 @@ export default function Home() {
                 Featured Projects
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                Cutting-edge machine learning solutions delivering measurable impact
+                Cutting-edge solutions across AI/ML systems and modern web applications
               </p>
             </div>
 
-            {/* Projects Grid */}
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {/* Project 1 - Object Detection */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
-                  {/* Project Header */}
-                  <div className="p-6 border-b border-gray-200/50">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">👁️</span>
-                      </div>
-                      <div className="flex gap-2">
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-gray-500 font-medium">Live</span>
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-blue-800 bg-clip-text text-transparent">
-                      Real-time Object Detection
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-2">YOLO-based computer vision system</p>
-                  </div>
+            {/* AI/ML Projects Section */}
+            <div className="mb-20">
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-500 to-blue-500 text-white px-6 py-2 rounded-full mb-4">
+                  <span className="w-2 h-2 bg-white rounded-full"></span>
+                  <span className="font-semibold text-sm">AI & Machine Learning</span>
+                </div>
+                <h3 className="text-3xl font-bold text-gray-800">Intelligent Systems</h3>
+                <p className="text-gray-600 mt-2">Advanced AI solutions with real-world impact</p>
+              </div>
 
-                  {/* Project Content */}
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Advanced object detection system achieving <span className="text-green-600 font-semibold">90%+ mAP accuracy</span>.
-                      Optimized for edge deployment with real-time inference capabilities.
-                    </p>
-
-                    {/* Metrics */}
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-cyan-600">90%+</div>
-                        <div className="text-xs text-gray-500">mAP Accuracy</div>
+              <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                {/* Project 1 - Object Detection */}
+                <div className="group relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
+                    {/* Project Header */}
+                    <div className="p-6 border-b border-gray-200/50">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-cyan-500 to-blue-500 rounded-xl flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">👁️</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-500 font-medium">Live</span>
+                        </div>
                       </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-blue-600">30ms</div>
-                        <div className="text-xs text-gray-500">Inference Time</div>
-                      </div>
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-blue-800 bg-clip-text text-transparent">
+                        Real-time Object Detection
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-2">YOLO-based computer vision system</p>
                     </div>
 
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-medium border border-cyan-200">Python</span>
-                      <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">PyTorch</span>
-                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium border border-purple-200">OpenCV</span>
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Advanced object detection system achieving <span className="text-green-600 font-semibold">90%+ mAP accuracy</span>.
+                        Optimized for edge deployment with real-time inference capabilities.
+                      </p>
+
+                      {/* Metrics */}
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-cyan-600">90%+</div>
+                          <div className="text-xs text-gray-500">mAP Accuracy</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-blue-600">30ms</div>
+                          <div className="text-xs text-gray-500">Inference Time</div>
+                        </div>
+                      </div>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-cyan-100 text-cyan-700 px-3 py-1 rounded-full text-sm font-medium border border-cyan-200">Python</span>
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">PyTorch</span>
+                        <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium border border-purple-200">OpenCV</span>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              {/* Project 2 - Recommendation Engine */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
-                  {/* Project Header */}
-                  <div className="p-6 border-b border-gray-200/50">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-purple-500 to-pink-500 rounded-xl flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">🎯</span>
+                {/* Project 2 - Fraud Detection */}
+                <div className="group relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
+                    {/* Project Header */}
+                    <div className="p-6 border-b border-gray-200/50">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">🛡️</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-500 font-medium">Live</span>
+                        </div>
                       </div>
-                      <div className="flex gap-2">
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-gray-500 font-medium">Live</span>
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-purple-800 bg-clip-text text-transparent">
-                      Recommendation Engine
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-2">Personalized content delivery</p>
-                  </div>
-
-                  {/* Project Content */}
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Collaborative filtering system serving <span className="text-purple-600 font-semibold">5M+ users</span> with
-                      personalized recommendations at <span className="text-pink-600 font-semibold">sub-100ms latency</span>.
-                    </p>
-
-                    {/* Metrics */}
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-purple-600">5M+</div>
-                        <div className="text-xs text-gray-500">Active Users</div>
-                      </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-pink-600">85ms</div>
-                        <div className="text-xs text-gray-500">Avg Latency</div>
-                      </div>
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-emerald-800 bg-clip-text text-transparent">
+                        Fraud Detection System
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-2">Real-time anomaly detection</p>
                     </div>
 
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-medium border border-purple-200">Python</span>
-                      <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium border border-red-200">TensorFlow</span>
-                      <span className="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-sm font-medium border border-yellow-200">Apache Spark</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Advanced anomaly detection reducing fraudulent transactions by
+                        <span className="text-green-600 font-semibold"> 85%</span> using ensemble methods
+                        and real-time scoring algorithms.
+                      </p>
 
-              {/* Project 3 - Fraud Detection */}
-              <div className="group relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
-                <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
-                  {/* Project Header */}
-                  <div className="p-6 border-b border-gray-200/50">
-                    <div className="flex items-center justify-between mb-4">
-                      <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
-                        <span className="text-white font-bold text-lg">🛡️</span>
+                      {/* Metrics */}
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-green-600">85%</div>
+                          <div className="text-xs text-gray-500">Fraud Reduction</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-emerald-600">99.2%</div>
+                          <div className="text-xs text-gray-500">Accuracy</div>
+                        </div>
                       </div>
-                      <div className="flex gap-2">
-                        <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                        <span className="text-xs text-gray-500 font-medium">Live</span>
-                      </div>
-                    </div>
-                    <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-emerald-800 bg-clip-text text-transparent">
-                      Fraud Detection System
-                    </h3>
-                    <p className="text-gray-600 text-sm mt-2">Real-time anomaly detection</p>
-                  </div>
 
-                  {/* Project Content */}
-                  <div className="p-6">
-                    <p className="text-gray-600 mb-6 leading-relaxed">
-                      Advanced anomaly detection reducing fraudulent transactions by
-                      <span className="text-green-600 font-semibold"> 85%</span> using ensemble methods
-                      and real-time scoring algorithms.
-                    </p>
-
-                    {/* Metrics */}
-                    <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-green-600">85%</div>
-                        <div className="text-xs text-gray-500">Fraud Reduction</div>
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">Python</span>
+                        <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium border border-red-200">Scikit-learn</span>
+                        <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium border border-indigo-200">FastAPI</span>
                       </div>
-                      <div className="text-center">
-                        <div className="text-2xl font-bold text-emerald-600">99.2%</div>
-                        <div className="text-xs text-gray-500">Accuracy</div>
-                      </div>
-                    </div>
-
-                    {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">Python</span>
-                      <span className="bg-red-100 text-red-700 px-3 py-1 rounded-full text-sm font-medium border border-red-200">Scikit-learn</span>
-                      <span className="bg-indigo-100 text-indigo-700 px-3 py-1 rounded-full text-sm font-medium border border-indigo-200">FastAPI</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            {/* View More Projects */}
-            <div className="text-center mt-12">
-              <button className="group bg-white/80 backdrop-blur-sm border border-gray-300 text-gray-700 px-8 py-4 rounded-2xl font-semibold hover:bg-white hover:border-gray-400 hover:scale-105 transition-all duration-300 shadow-lg flex items-center gap-2 mx-auto">
-                View All Projects
-                <span className="group-hover:translate-x-1 transition-transform">→</span>
-              </button>
+            {/* Frontend Applications Section */}
+            <div>
+              <div className="text-center mb-12">
+                <div className="inline-flex items-center gap-2 bg-gradient-to-r from-orange-500 to-pink-500 text-white px-6 py-2 rounded-full mb-4">
+                  <span className="w-2 h-2 bg-white rounded-full"></span>
+                  <span className="font-semibold text-sm">Frontend Applications</span>
+                </div>
+                <h3 className="text-3xl font-bold text-gray-800">Web & Mobile Interfaces</h3>
+                <p className="text-gray-600 mt-2">Modern, responsive applications with exceptional UX</p>
+              </div>
+
+              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Project 1 - Social App */}
+                <div className="group relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-pink-500 to-purple-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
+                    {/* Project Header */}
+                    <div className="p-6 border-b border-gray-200/50">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-pink-500 to-purple-500 rounded-xl flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">👥</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-500 font-medium">Live</span>
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-purple-800 bg-clip-text text-transparent">
+                        Social App
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-2">Twitter-like social platform</p>
+                    </div>
+
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Full-stack social media application with real-time messaging, post interactions, and user authentication. Features include live notifications and responsive design.
+                      </p>
+
+                      {/* Metrics */}
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-pink-600">Real-time</div>
+                          <div className="text-xs text-gray-500">Messaging</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-purple-600">100%</div>
+                          <div className="text-xs text-gray-500">Responsive</div>
+                        </div>
+                      </div>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-pink-100 text-pink-700 px-3 py-1 rounded-full text-sm font-medium border border-pink-200">Next.js</span>
+                        <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium border border-orange-200">Firebase</span>
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">React</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project 2 - Gym Exercises */}
+                <div className="group relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-green-500 to-emerald-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
+                    {/* Project Header */}
+                    <div className="p-6 border-b border-gray-200/50">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-emerald-500 rounded-xl flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">💪</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-500 font-medium">Live</span>
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-emerald-800 bg-clip-text text-transparent">
+                        Gym Exercises
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-2">Fitness exercise library</p>
+                    </div>
+
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Comprehensive fitness application featuring detailed exercise demonstrations, workout routines, and progress tracking. Includes video tutorials and personalized recommendations.
+                      </p>
+
+                      {/* Metrics */}
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-green-600">500+</div>
+                          <div className="text-xs text-gray-500">Exercises</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-emerald-600">50+</div>
+                          <div className="text-xs text-gray-500">Workouts</div>
+                        </div>
+                      </div>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-orange-100 text-orange-700 px-3 py-1 rounded-full text-sm font-medium border border-orange-200">HTML</span>
+                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">Node.js</span>
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">React</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Project 3 - Hotel Website */}
+                <div className="group relative">
+                  <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-300"></div>
+                  <div className="relative bg-white/80 backdrop-blur-sm rounded-2xl shadow-xl border border-gray-200/50 overflow-hidden group-hover:scale-105 transition-all duration-300">
+                    {/* Project Header */}
+                    <div className="p-6 border-b border-gray-200/50">
+                      <div className="flex items-center justify-between mb-4">
+                        <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-xl flex items-center justify-center">
+                          <span className="text-white font-bold text-lg">🏨</span>
+                        </div>
+                        <div className="flex gap-2">
+                          <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                          <span className="text-xs text-gray-500 font-medium">Live</span>
+                        </div>
+                      </div>
+                      <h3 className="text-xl font-bold bg-gradient-to-r from-gray-800 to-indigo-800 bg-clip-text text-transparent">
+                        PavStel Hotel
+                      </h3>
+                      <p className="text-gray-600 text-sm mt-2">Hotel booking website</p>
+                    </div>
+
+                    {/* Project Content */}
+                    <div className="p-6">
+                      <p className="text-gray-600 mb-6 leading-relaxed">
+                        Complete hotel management platform with room booking, availability tracking, and customer management. Features secure payment integration and admin dashboard.
+                      </p>
+
+                      {/* Metrics */}
+                      <div className="grid grid-cols-2 gap-4 mb-6">
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-blue-600">Secure</div>
+                          <div className="text-xs text-gray-500">Payments</div>
+                        </div>
+                        <div className="text-center">
+                          <div className="text-2xl font-bold text-indigo-600">Admin</div>
+                          <div className="text-xs text-gray-500">Dashboard</div>
+                        </div>
+                      </div>
+
+                      {/* Technologies */}
+                      <div className="flex flex-wrap gap-2">
+                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">MongoDB</span>
+                        <span className="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-medium border border-green-200">Node.js</span>
+                        <span className="bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-medium border border-blue-200">React</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
